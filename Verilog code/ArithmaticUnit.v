@@ -1,0 +1,47 @@
+module ArithmeticUnit (
+    input [511:0] A,
+    input [511:0] B,
+    input [2:0] op, 
+    output reg [511:0] low_result,
+    output reg [511:0] high_result
+);
+
+    wire [31:0] A_words [15:0];
+    wire [31:0] B_words [15:0];
+    wire [63:0] add_result [15:0];
+    wire [63:0] mult_result [15:0];
+
+    
+    genvar i;
+    generate
+        for (i = 0; i < 16; i = i + 1) begin : word_split
+            assign A_words[i] = A[i*32 +: 32];
+            assign B_words[i] = B[i*32 +: 32];
+            assign add_result[i] = A_words[i] + B_words[i];
+            assign mult_result[i] = A_words[i] * B_words[i];
+        end
+    endgenerate
+
+    integer j;
+    always @(*) begin
+        if (op == 3'b000) begin
+           
+            for (j = 0; j < 16; j = j + 1) begin
+                low_result[j*32 +: 32] = add_result[j][31:0];
+                high_result[j*32 +: 32] = add_result[j][63:32]; 
+            end
+        end else if (op == 3'b001) begin
+        
+            for (j = 0; j < 16; j = j + 1) begin
+                low_result[j*32 +: 32] = mult_result[j][31:0];
+                high_result[j*32 +: 32] = mult_result[j][63:32];
+            end
+        end else begin
+           
+            low_result = 512'b0;
+            high_result = 512'b0;
+        end
+    end
+
+endmodule
+
