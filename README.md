@@ -32,6 +32,6 @@ we have a memory with depth 512 and width of 16 and since our processsor is a ve
 ### CPU
 Now its time to essemble what we have built.Centeral Processing Unit is where we create an instance of the module above and using a 3bit opcode we model the behavior of the cpu.(op = 000 addition, opcode = 001 multiplication, opcode = 010 writing from registerfile to memory ,and finally opcode = 011 writing from memory to registerfile, other opcodes are used as reset to reset write flags.)
 
-![CPU instantiation](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185836.png)
+![CPU instantiation]([https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185836.png](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185836.png))
 
 ![CPU behavioral Modeling](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185849.png)
