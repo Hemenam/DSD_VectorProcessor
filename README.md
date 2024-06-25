@@ -1,7 +1,7 @@
 # DSD_VectorProcessor
 In this project we design to build a simple vector processor in Verilog.
 
-![Nvidia SIMD supercomputer](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeveloper.nvidia.com%2Fblog%2Fnvidia-grace-cpu-superchip-architecture-in-depth%2F&psig=AOvVaw3Nl0E8aYsO9ITsF3ODeaEx&ust=1719425652652000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjZmPah94YDFQAAAAAdAAAAABAE)
+
 ## SubModules
 - CPU     
 - ArithmeticUnit [capable of addition and multiplication]
@@ -37,3 +37,10 @@ Now its time to essemble what we have built.Centeral Processing Unit is where we
 ![CPU instantiation](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185836.png)
 
 ![CPU behavioral Modeling](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185849.png)
+
+
+## TESTBENCH
+we need to test our CPU in four diffrent areas. opcode = 000,001,010,011
+1. first we instantiate cpu in cpu_tb module.
+2. we then proceed to give values to A1 and A2
+  - 
