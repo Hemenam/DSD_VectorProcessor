@@ -56,7 +56,8 @@ we need to test our CPU in four diffrent areas. opcode = 000,001,010,011
    ![](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20210417.png)
 
 - we write the value of A3 in the first 16 cells of memory and then display the memory
-
+![](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20205938.png)
+  ![](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20210528.png)
 - we write the first 16 cells  of memory  in A3 and then display the memory
 
 
