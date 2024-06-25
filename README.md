@@ -7,7 +7,7 @@ In this project we design to build a simple vector processor in Verilog.
 - RegisterFile [Containing 4 512bit_registers]
 
 ## Implementation
-## IMPORTANT Note
+## IMPORTANT NOTE
 It is our goal to design a vector processor whih is a tipe of SIMD processors, which means for every additions it adds two vetors and not two numbers.
 
 ### AU
@@ -15,3 +15,7 @@ It is our goal to design a vector processor whih is a tipe of SIMD processors, w
 firstly we design the arithmeticUnit (if opcode=00 add elseif opcode=01 mult). we get 2 512bit inputs A and B; we break these two to 16 32bit numbers and then using generation and looping perform the operation
 on all the 16 pairs of numbers and store the result in a 16*64bit array.now we put the first 32 bits of this array next to each other as low_result and the other 32bits as high_result.
 ![The implementation of AU.](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185618.png)
+
+### RegisterFile
+our registerfile has 4 registers (A1,A2,A3,A4),two data outptut and their respective register address,one data input and two write flags(one for writing in any register and the other for output of arithmetic operation [A3,A4] also two arithmetic 512bit inputs ).  
+![RegisterFile](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20185711.png)
