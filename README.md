@@ -1,5 +1,7 @@
 # DSD_VectorProcessor
 In this project we design to build a simple vector processor in Verilog.
+
+![Nvidia SIMD supercomputer](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeveloper.nvidia.com%2Fblog%2Fnvidia-grace-cpu-superchip-architecture-in-depth%2F&psig=AOvVaw3Nl0E8aYsO9ITsF3ODeaEx&ust=1719425652652000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjZmPah94YDFQAAAAAdAAAAABAE)
 ## SubModules
 - CPU     
 - ArithmeticUnit [capable of addition and multiplication]
