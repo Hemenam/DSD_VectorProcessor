@@ -54,6 +54,9 @@ we need to test our CPU in four diffrent areas. opcode = 000,001,010,011
 - multiplication is the same as addition
   ![](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20205923.png)
    ![](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20210417.png)
+    - for example take the biggest 8digits of A1 = AAAAAAAA and A2 = 11111111 and the result given by the Au is low(A3) = 49f49f4a   high(A4) = 0b60b60
+     now we check this with a calculator:
+              ![](https://github.com/Hemenam/DSD_VectorProcessor/blob/main/Pictures/Screenshot%202024-06-25%20210405.png)
 
 - we write the value of A3 in the first 16 cells of memory and then display the memory
 
